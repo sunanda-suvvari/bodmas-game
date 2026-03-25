@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BODMAS Game</title>
+    <title>BODMAS Learning Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>BODMAS Challenge</h1>
+<h1>BODMAS Learning Game</h1>
 
 <div id="game">
-    <h2 id="question">Loading...</h2>
+    <h2 id="question"></h2>
 
     <div id="options"></div>
 
     <p id="result"></p>
+    <p id="explanation"></p>
+
     <p>Score: <span id="score">0</span></p>
 
     <button onclick="nextQuestion()">Next</button>
@@ -21,8 +23,4 @@
 
 <script src="script.js"></script>
 </body>
-<form action="submit.php" method="POST">
-    <input type="hidden" id="finalScore" name="score">
-    <button type="submit" onclick="sendScore()">Submit Score</button>
-</form>
 </html>
